@@ -1,7 +1,11 @@
-function multiply(a, b) {
-  return a * b;
+const whichSchool = function (age) {
+  if (age < 13) {
+    return 'Elementary School';
+  } else if (age >= 13 && age <= 18) {
+    return 'Secondary School';
+  } else {
+    return 'Lighthouse Labs';
+  }
 }
 
-const result = multiply(2, 4);
-
-console.log(result);
+console.log(whichSchool(1));
